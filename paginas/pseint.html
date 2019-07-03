@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+	<head>
+	<meta chartset="UTF-8"/>
+		<title>Pseint</title>
+		<link rel="stylesheet" href="pseintcss.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
+	</head>
+	<body>
+	<header>
+		<nav>
+			<ul class="nav">
+				<li><a href="file:///C:/Users/Andres/Desktop/Pag%20Web/index.html#"><i class="fas fa-home"></i></a></li><h1> Lenguaje Pseint</h1>
+			</ul>		
+		</nav>
+	</header>
+	<section class="main">
+		<section class="articles">
+
+				<h2>¿Qué es Pseint?</h2>
+				
+			<article>
+				<img src="../imgs/PS3.PNG" width="100%" height="80%">
+			</article>
+			<article>
+				<hr></hr>
+				<p>PSeInt es una herramienta para asistir a un estudiante en sus primeros pasos en programación. Mediante un simple e intuitivo pseudolenguaje en español (complementado con un editor de diagramas de flujo), le permite centrar su atención en los conceptos fundamentales de la algoritmia computacional, minimizando las dificultades propias de un lenguaje y proporcionando un entorno de trabajo con numerosas ayudas y recursos didácticos.
+				</p>
+				<hr></hr>
+			</article>
+			<article id="si">
+				<hr>	
+				</hr>
+				<h3>Estructura (Si)</h3>
+				<hr>	
+				</hr>
+				<p>Algoritmo sin_titulo
+					<br>
+					
+					<br>
+					<b>Si</b> expresion_logica <b>Entonces</b>
+					<br>
+						acciones_por_verdadero
+					<br>
+					<b>SiNo</b>
+					<br>
+						acciones_por_falso
+					<br>
+					<b>FinSi</b>
+					<br>
+					FinAlgoritmo
+				</p>
+			</article>
+			<article  id="segun">
+				<hr></hr>
+				<h3>Estructura (Segun)</h3>
+				<hr></hr>
+				<B>Segun</B> variable_numerica <B>Hacer</B>
+				<br>
+					opcion_1:
+				<br>
+						secuencia_de_acciones_1
+				<br>
+					opcion_2:
+				<br>
+						secuencia_de_acciones_2
+				<br>
+					opcion_3:
+				<br>
+						secuencia_de_acciones_3
+				<br>
+					<b>De Otro Modo:</b>
+				<br>
+						secuencia_de_acciones_dom
+				<br>
+				<b>FinSegun</b>
+			</article>
+			<article id="mientras">
+				<hr></hr>
+				<h3>Estructura (Mientras)</h3>
+				<hr></hr>
+				<b>Mientras</b> expresion_logica <b>Hacer</b>
+					<br>
+					secuencia_de_acciones
+					<br>
+				<b>FinMientras<b>
+			</article>
+			<article id="repetir">
+				<hr></hr>
+				<h3>Estructura (Repetir)</h3>
+				<hr></hr>
+					<b>(Repetir)</b>
+				<br>
+					secuencia_de_acciones
+				<br>
+				<b>(Mientras	Que)</b> expresion_logica
+			</article>
+			<article id="para">
+				<hr></hr>
+					<h3>Estructura (Para)</h3>
+				<hr></hr>
+				<b>Para</b> variable_numerica<-valor_inicial <b>Hasta</b> valor_final <b>Con Paso Hacer</b>
+				<br></br>
+				secuencia_de_acciones
+				<br></br>
+				<b>(FinPara)</b>
+			</article>
+			<article id="subproceso">
+				<hr></hr>
+					<h3>Estructura (SubProcesos)</h3>
+				<hr></hr>
+					<h4>Ejemplo</h4>
+					<p>
+							<i>// funcion que no recibe ni devuelve nada</i>
+							<br></br>
+							SubProceso Saludar
+							<br></br>
+								Escribir "Hola mundo!"
+								<br></br>
+							FinSubProceso
+							<br></br>
+							<br></br>
+							
+							// funcion que recibe un argumento por valor, y devuelve su doble
+							<br></br>
+							SubProceso res <- CalcularDoble(num) 
+							<br></br>
+								res <- num*2 // retorna el doble
+								<br></br>
+							FinSubProceso
+							<br></br>
+							<br></br>
+							
+							// funcion que recibe un argumento por referencia, y lo modifica
+							<br></br>
+							SubProceso Triplicar(num por referencia) 
+							<br></br>	
+							num <- num*3 // modifica la variable duplicando su valor
+							<br></br>
+							FinSubProceso
+							<br></br>
+							<br></br>
+							// proceso principal, que invoca a las funciones antes declaradas
+							<br></br>
+							Proceso PruebaFunciones
+							<br></br>	
+								
+								Escribir "Llamada a la funcion Saludar:"
+								<br></br>
+								Saludar // como no recibe argumentos pueden omitirse los paréntesis vacios
+								<br></br>
+								
+								Escribir "Ingrese un valor numérico para x:"
+								<br></br>
+								Leer x
+								<br></br>
+								Escribir "Llamada a la función CalcularDoble (pasaje por valor)"
+								<br></br>
+								Escribir "El doble de ",x," es ", CalcularDoble(x)
+								<br></br>
+								Escribir "El valor original de x es ",x
+								<br></br>
+								Escribir "Llamada a la función Triplicar (pasaje por referencia)"
+								<br></br>
+								Triplicar(x)
+								<br></br>
+								Escribir "El nuevo valor de x es ", x
+								<br></br>
+							FinProceso
+					</p>
+			</article>
+		</section>
+		<aside>
+			<img src="../imgs/logopseint.png" width="100%" alt="Pseint">
+			<h4>Acceso rapido a Estructuras</h4>
+			<hr>
+			<div class="acceso">
+				<a href="#si">Si</a>
+				<hr>>
+				<a href="#segun">Segun</a>
+				<hr>>
+				<a href="#mientras">Mientras</a>
+				<hr>>
+				<a href="#repetir">Repetir</a>
+				<hr>
+				<a href="#para">Para</a>
+				<hr>>
+				<a href="#subproceso">Subprocesos</a>
+			</div>
+				<img src="../imgs/ps1.png " width="100%" alt="example">
+				<img src="../imgs/ps2.jpg " width="100%" alt="example">
+		</aside>
+	</section>
+
+	</body>
+	<footer>
+		<p> Por - Andres Felipe Caycedo Jimenez - Ficha:1752634 - Programacion de Software</p>
+		<hr>
+	</footer>
+</html>

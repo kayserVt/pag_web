@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+	<head>
+	<meta chartset="UTF-8"/>
+		<title>C++</title>
+		<link rel="stylesheet" href="c++style.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
+	</head>
+	<body>
+	<header>
+		<nav>
+			<ul class="nav">
+				<li><a href="../index.html"><i class="fas fa-home"></i></a></li><h1>Lenguaje C++</h1>
+			</ul>		
+		</nav>
+	</header>
+	<section class="main">
+		<section class="articles">
+
+				<h2>¿Qué es C++?</h2>
+			<article>
+				<img src="../imgs/c++ex.PNG" width="100%" height="80%">
+			</article>
+			<article>
+				<hr></hr>
+				<p>
+                        C++ es un lenguaje de programación orientado a objetos que toma la base del lenguaje C y le agrega la capacidad de abstraer tipos como en Smalltalk.
+				</p>
+				<hr></hr>
+			</article>
+			<article id="si">
+                    <h3>Sentencia if</h3> 
+                    <hr>
+                    <p>La instrucción if es, por excelencia, la más utilizada para construir estructuras de control de flujo.</p>
+                    <br>
+                    <h3>Primera Forma</h3>
+                    <p>Ahora bién, la sintaxis utilizada en la programación de C++ es la siguiente:</p>
+                    <p>if (condicion)</p> 
+                    <br>
+                       {
+                    <br>
+                           Set de instrucciones
+                     <br>
+                       }
+                    <h3>Segunda Forma</h3>  
+
+                    <p>Ahora veremos la misma sintaxis pero ahora le añadiremos la parte "Falsa" de la sentencia:</p>
+                       <br>
+                    if (condicion)
+                    <br>
+                    {
+                        <br>
+                        Set de instrucciones    //PARTE VERDADERA
+                    <br>
+                    }
+                    <br>
+                    else
+                    <br>
+                    {
+                        <br>
+                        Set de instrucciones 2  //Parte FALSA
+                        <br>
+                    }
+            </article>
+            
+			<article  id="segun">
+                <h3>Sentencia switch</h3>
+                <hr>
+                switch es otra de las instrucciones que permiten la construcción de estructuras de control. A diferencia de if, para controlar el flujo por medio de una sentencia switch se debe de combinar con el uso de las sentencias case y break.
+                
+                Notas: cualquier número de casos a evaluar por switch así como la sentencia default son opcionales. La sentencia switch es muy útil en los casos de presentación de menus.
+                <hr>
+                <h4>Sintaxis:</h4>
+                
+                switch (condición)
+                <br>
+                {
+                    <br>
+                    case primer_caso:
+                    <br>
+                         bloque de instrucciones 1
+                         <br>
+                    break;
+                    <br>
+                
+                    case segundo_caso:
+                    <br>
+                         bloque de instrucciones 2
+                         <br>
+                    break;
+                    <br>
+                
+                    case caso_n:
+                    <br>
+                         bloque de instrucciones n
+                         <br>
+                    break;
+                    <br>
+                
+                    default: bloque de instrucciones por defecto
+                    <br>
+                }
+			</article>
+			<article id="mientras">
+                    <h3>Sentencias de iteración</h3>
+                    <hr>
+                    <h4>DEFINICIÓN</h4>
+                    <hr>
+                    Las Sentencias de Iteración o Ciclos son estructuras de control que repiten la ejecución de un grupo de instrucciones. Básicamente, una sentencia de iteración es una estructura de control condicional, ya que dentro de la misma se repite la ejecución de una o más instrucciones mientras que una a condición especifica se cumpla. Muchas veces tenemos que repetir un número definido o indefinido de veces un grupo de instrucciones por lo que en estos casos utilizamos este tipo de sentencias. en C++ los ciclos o bucles se construyen por medio de las sentencias for, while y do - while. La sentencia for es útil para los casos en donde se conoce de antemano el número de veces que una o más sentencias han de repetirse. Por otro lado, la sentencia while es útil en aquellos casos en donde no se conoce de antemano el número de veces que una o más sentencias se tienen que repetir.
+                    <hr>
+                    <br>
+                    Sentencias For
+                    <br>
+                    for(contador; final; incremento)
+                    <br>
+                    {
+                        <br>   
+                         Codigo a Repetir;
+                         <br>
+                    }
+                    <br>
+                    donde:
+                    <br>
+                    contador es una variable numérica
+                    <br>
+                    <hr>
+                    final es la condición que se evalua para finalizar el ciclo (puede ser independiente del contador)
+                    incremento es el valor que se suma o resta al contador
+                    Hay que tener en cuenta que el "for" evalua la condición de finalización igual que el while, es decir, mientras esta se cumpla continuaran las repeticiones.
+                   <hr>
+                    <br>
+                    Ejemplo 1:
+                    <br>
+                    for(int i=1; i<=10; i++)
+                    <br>
+                    {
+                        <br>
+                        cout<<"Hola Mundo";   
+                        <br>
+                    }
+                    <br>
+			</article>
+			<article id="repetir">
+                   <h3>Sentencia while</h3> 
+                   <hr>
+                   <br>
+                    while(condicion)
+                    <br>
+                    {
+                        <br>
+                        código a Repetir
+                        <br>
+                    }
+                    <br>
+                    
+                    donde:
+                    <br>
+                    
+                    condicion es la expresión a evaluar
+                    <br>
+                    Ejemplo 1:
+                    <br>
+                    
+                    int contador = 0;
+                    <br>
+                    
+                    while(contador<=10)
+                    <br>
+                    {ç
+                        <br>
+                        contador=contador+1;
+                        <br>
+                        cout<<"Hola Mundo";
+                        <br>
+                    }
+                    <br>
+                    El contador Indica que hasta que este llegue a el total de 10 entonces se detendrá y ya no se realizará el código contenido dentro de la sentencia while, de lo contrario mientras el "contador" sea menor o igual a 10 entonces el código contenido se ejecutará desplegando hasta 11 veces "Hola Mundo" en pantalla.
+			</article>
+			<article id="para">
+                    <h3>Sentencias break y continue</h3>
+                    <hr>
+                    En la sección (Sentencia switch) vimos que la sentencia break es utilizada con el propósito de forzar un salto dentro del bloque switch hacia el final del mismo. En esta sección volveremos a ver el uso de break, salvo que esta ocasión la usaremos junto con las sentecias for y la sentencia while. Además, veremos el uso de la sentencia continue.
+                    <hr>
+                    <br>
+                    break
+                    <br>
+                    La sentencia break se usa para forzar un salto hacia el final de un ciclo controlado por for o por while.
+                    <br>
+                    Ejemplo:
+                    <br>
+                    En el siguiente fragmento de código la sentencia break cierra el ciclo for cuando la variable ( i ) es igual a 5. La salida para el mismo será:
+                    <br>
+                    0 1 2 3 4
+                    <br>
+                    <p> for (int i=0; i<10; i+)
+                    <br>
+                    {
+                        <br>
+                        if (i == 5) break;
+                        <br>
+                        cout << i << " ";
+                        <br>
+                    }
+                     </p>
+		</section>
+		<aside>
+			<img src="../imgs/c++.png" width="100%" alt="Pseint">
+			<h4>Acceso rapido a Estructuras</h4>
+			<hr>
+			<div class="acceso">
+				<a href="#si">if</a>
+				<hr>>
+				<a href="#segun">switch</a>
+				<hr>>
+				<a href="#mientras">for</a>
+				<hr>>
+				<a href="#repetir">while</a>
+				<hr>
+				<a href="#para">break-continue</a>
+				<hr>>
+				<a href="#subproceso">Subprocesos</a>
+            </div>
+            <img src="../imgs/fujoc++.png" width="100%">
+				
+		</aside>
+	</section>
+
+	</body>
+	<footer>
+		<p> Por - Andres Felipe Caycedo Jimenez - Ficha:1752634 - Programacion de Software</p>
+		<hr>
+	</footer>
+</html>
